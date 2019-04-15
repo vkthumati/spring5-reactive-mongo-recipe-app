@@ -1,9 +1,9 @@
 package com.thumati.springframework.converters;
 
-import com.thumati.springframework.commands.IngredientCommand;
 import com.thumati.springframework.domain.Ingredient;
 import com.thumati.springframework.domain.Recipe;
 import com.thumati.springframework.domain.UnitOfMeasure;
+import com.thumati.springframework.commands.IngredientCommand;
 import org.junit.Before;
 import org.junit.Test;
 

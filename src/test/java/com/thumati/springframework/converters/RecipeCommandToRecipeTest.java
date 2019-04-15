@@ -1,11 +1,11 @@
 package com.thumati.springframework.converters;
 
+import com.thumati.springframework.domain.Difficulty;
+import com.thumati.springframework.domain.Recipe;
 import com.thumati.springframework.commands.CategoryCommand;
 import com.thumati.springframework.commands.IngredientCommand;
 import com.thumati.springframework.commands.NotesCommand;
 import com.thumati.springframework.commands.RecipeCommand;
-import com.thumati.springframework.domain.Difficulty;
-import com.thumati.springframework.domain.Recipe;
 import org.junit.Before;
 import org.junit.Test;
 

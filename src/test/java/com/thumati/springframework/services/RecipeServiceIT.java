@@ -1,10 +1,10 @@
 package com.thumati.springframework.services;
 
-import com.thumati.springframework.commands.RecipeCommand;
 import com.thumati.springframework.converters.RecipeCommandToRecipe;
 import com.thumati.springframework.converters.RecipeToRecipeCommand;
 import com.thumati.springframework.domain.Recipe;
 import com.thumati.springframework.repositories.RecipeRepository;
+import com.thumati.springframework.commands.RecipeCommand;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,6 @@ public class RecipeServiceIT {
     @Autowired
     RecipeToRecipeCommand recipeToRecipeCommand;
 
-  //  @Transactional
     @Test
     public void testSaveOfDescription() throws Exception {
         //given
@@ -42,7 +41,7 @@ public class RecipeServiceIT {
 
         //when
         testRecipeCommand.setDescription(NEW_DESCRIPTION);
-        RecipeCommand savedRecipeCommand = recipeService.saveRecipeCommand(testRecipeCommand);
+        RecipeCommand savedRecipeCommand = recipeService.saveRecipeCommand(testRecipeCommand).block();
 
         //then
         assertEquals(NEW_DESCRIPTION, savedRecipeCommand.getDescription());

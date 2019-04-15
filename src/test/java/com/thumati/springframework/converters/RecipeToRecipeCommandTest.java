@@ -1,8 +1,7 @@
 package com.thumati.springframework.converters;
 
-import com.thumati.springframework.commands.RecipeCommand;
 import com.thumati.springframework.domain.*;
-import org.junit.Assert;
+import com.thumati.springframework.commands.RecipeCommand;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -90,7 +89,7 @@ public class RecipeToRecipeCommandTest {
         assertEquals(COOK_TIME, command.getCookTime());
         assertEquals(PREP_TIME, command.getPrepTime());
         assertEquals(DESCRIPTION, command.getDescription());
-        Assert.assertEquals(DIFFICULTY, command.getDifficulty());
+        assertEquals(DIFFICULTY, command.getDifficulty());
         assertEquals(DIRECTIONS, command.getDirections());
         assertEquals(SERVINGS, command.getServings());
         assertEquals(SOURCE, command.getSource());

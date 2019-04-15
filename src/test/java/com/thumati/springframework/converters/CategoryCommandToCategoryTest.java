@@ -1,7 +1,7 @@
 package com.thumati.springframework.converters;
 
-import com.thumati.springframework.commands.CategoryCommand;
 import com.thumati.springframework.domain.Category;
+import com.thumati.springframework.commands.CategoryCommand;
 import org.junit.Before;
 import org.junit.Test;
 

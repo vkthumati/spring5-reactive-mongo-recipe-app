@@ -1,7 +1,7 @@
 package com.thumati.springframework.converters;
 
-import com.thumati.springframework.commands.UnitOfMeasureCommand;
 import com.thumati.springframework.domain.UnitOfMeasure;
+import com.thumati.springframework.commands.UnitOfMeasureCommand;
 import org.junit.Before;
 import org.junit.Test;
 

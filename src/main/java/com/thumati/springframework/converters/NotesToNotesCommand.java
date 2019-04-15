@@ -1,7 +1,7 @@
 package com.thumati.springframework.converters;
 
-import com.thumati.springframework.commands.NotesCommand;
 import com.thumati.springframework.domain.Notes;
+import com.thumati.springframework.commands.NotesCommand;
 import lombok.Synchronized;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.Nullable;
